@@ -31,10 +31,10 @@ public class player : MonoBehaviour
     void Update()
     {
         if (Input.GetKey(KeyCode.UpArrow)){
-            transform.position = transform.position+transform.forward*0.01f;
+            transform.position = transform.position+transform.forward*0.2f;
         }
         if (Input.GetKey(KeyCode.DownArrow)){
-            transform.position = transform.position-transform.forward*0.01f;
+            transform.position = transform.position-transform.forward*0.2f;
         }
         if (Input.GetKey(KeyCode.LeftArrow)){
             transform.RotateAround(transform.position,Vector3.up,-50*Time.deltaTime);
